@@ -7,7 +7,7 @@
         {
           "authToken": "{{AUTH_TOKEN}}",
           "authentication": "bearer",
-          "bodyContent": "{\n  \"labels\": [\n    \"{{DEFAULT_LABEL_VAR_ID}}\"\n  ],\n  \"title\": \"{{ARTICLE_TITLE_VAR_ID}}\",\n  \"url\": \"{{ARTICLE_URL_VAR_ID}}\"\n}",
+          "bodyContent": "{\n  \"labels\": [\n    \"{{{{DEFAULT_LABEL_VAR_ID}}}}\"\n  ],\n  \"title\": \"{{{{ARTICLE_TITLE_VAR_ID}}}}\",\n  \"url\": \"{{{{ARTICLE_URL_VAR_ID}}}}\"\n}",
           "contentType": "application/json",
           "description": "Save current article to your Readeck reading list",
           "iconName": "flat_color_bookmark_2",
@@ -21,7 +21,7 @@
             "failureOutput": "message",
             "failureMessage": "❌ Failed to save article. Please check your connection and API token."
           },
-          "url": "{{SERVER_URL_VAR_ID}}/api/bookmarks",
+          "url": "{{{{SERVER_URL_VAR_ID}}}}/api/bookmarks",
           "timeout": 10000,
           "followRedirects": true,
           "acceptAllCertificates": false,
